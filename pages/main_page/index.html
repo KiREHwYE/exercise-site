@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise</title>
+</head>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    margin-bottom: 15px;
+  }
+</style>
+
+<body>
+
+  <h1>
+    <a style="font-family: 'Bookman Old Style'" href="https://www.kubsu.ru/index.php">Kuban State University</a>
+  </h1>
+
+  <p>
+    Some text. <strong><i>Important text</i></strong> <br>
+    <strong><b>VERY IMPORTANT TEXT</b></strong>
+  </p>
+
+  <img src="../../image.jpg" alt="Flower" width="500px" height="400px">
+
+  <div style="background-color: #ffb5a0; width: 500px;height: 100px; text-align: center">
+    <h2>Some Block</h2>
+    <p style="color: greenyellow;font-size: 18px">
+      I'm a peach-colored block
+    </p>
+  </div>
+
+  <span style="margin-top: 15px">
+    Span element
+  </span>
+
+<ul>
+  <li>
+    <a href="http://www.kubsu.ru/index.php">Kuban State University main page (no https).</a>
+  </li>
+  <li>
+    <a href="https://www.kubsu.ru/index.php">Kuban State University main page (https).</a>
+  </li>
+  <li id="image_item">
+    <a href="https://www.britannica.com/plant/Chrysanthemum" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Chrysanthemum%2Ckiku%2Ckatori-city%2Cjapan.JPG/1200px-Chrysanthemum%2Ckiku%2Ckatori-city%2Cjapan.JPG"
+           alt="Flower"
+           width="100px"
+           height="100px">
+    </a>
+    <span id="image_description_text">This is a flower-image-link!</span>
+  </li>
+  <li>
+    <a href="../inner_page/inner_page.html">Go to the Inner Page.
+    </a>
+  </li>
+  <li>
+    <a href="index.html">Go to the Main Page (current page).
+    </a>
+  </li>
+  <li>
+    <a href="index.html#image_description_text">Go to the fragment of this site <br>(The text beside the image above).
+    </a>
+  </li>
+  <li>
+    <a href="?page=2&action=1&readable=false">Link with 3 parameters.</a>
+  </li>
+  <li>
+    <a href="?id=2342fag123">Link with id parameter.</a>
+  </li>
+  <li>
+    <a href="./index.html">Relative in the same catalog.</a>
+  </li>
+  <li>
+    <a href="../../about/some_page.html">Relative in the "about" catalog.</a>
+  </li>
+  <li>
+    <a href="../page_one_level_higher.html">Relative in the catalog one level higher.</a>
+  </li>
+  <li>
+    <a href="../../one_another_page.html">Relative in the catalog two levels higher.</a>
+  </li>
+  <li>
+    <pre>
+      This is a text that contains a hyperlink.
+      Where is it? Here! — <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Wiki Link!!!!!</a>
+      Try to click it.
+    </pre>
+  </li>
+  <li>
+    <a href="https://ru.wikivoyage.org/wiki/Wikivoyage:%D0%92%D0%B8%D0%BA%D0%B8_%D0%BB%D1%8E%D0%B1%D0%B8%D1%82_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%D0%B8_2023#О_чём_этот_конкурс?">The link to the element of a third-party site.</a>
+  </li>
+  <li>
+
+    <img usemap="#somemap" src="../../image.jpg" alt="image with area to click" width="300" height="300">
+    <map id="somemap" name="map">
+      <area shape="circle" coords="150,150,50" target="_blank" href="../../about/some_page.html" alt="some link">
+      <area shape="rect" coords="0, 300, 300, 250" target="_blank" href="https://www.w3schools.com/" alt="another link">
+    </map>
+    <br><span>
+      Map Links: one is in the centre (circle), <br> another one is in the bottom (rectangle).
+    </span>
+  </li>
+  <li>
+    <a href="">Empty href</a>
+  </li>
+  <li>
+    <a>No href</a>
+  </li>
+  <li>
+    <a rel="nofollow" target="_blank" href="https://www.microsoft.com/ru-ru">Search Engine free link.</a>
+  </li>
+  <li>
+    <ol>
+      <li>
+        <a target="_blank" href="http://ru.wikipedia.org" title="Wiki Title">Wiki.ru</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://www.kubsu.ru" title="Kubsu Title">Kubsu.ru</a>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <a target="_blank" href="ftp://user:password@address/Location/file">FTP server file link</a>
+  </li>
+</ul>
+
+<a href="../form.html"><b style="font-size: 56px; color: red">Form</b></a>
+
+</body>
+</html>
