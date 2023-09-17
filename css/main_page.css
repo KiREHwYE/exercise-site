@@ -1,0 +1,136 @@
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+caption {
+  border: 3px solid purple;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+th {
+  border: 1px solid grey;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid grey;
+  text-align: center;
+}
+
+table thead {
+  background-color: #3cff37;
+}
+
+table caption {
+  background-color: white;
+}
+
+/*table tbody:nth-child(odd) {*/
+/*  background-color: white;*/
+/*}*/
+
+/*table tbody:nth-child(even) {*/
+/*  background-color: #b3d4fc;*/
+/*}*/
+
+table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #b3d4fc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 960px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+header div img {
+  margin-right: 10px;
+}
+
+header div img {
+  border-radius: 50%;
+}
+
+header div a{
+  margin-right: 50px;
+  font-size: 22px;
+}
+
+header div {
+  justify-content: space-between;
+  margin: 10px
+}
+
+nav h2 {
+  font-size: 56px;
+}
+
+.DivRowCentered {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.HeaderProps {
+  background-color:#ccc;
+  width: 100%;
+  height: 140px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavProps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: peachpuff;
+  border-radius: 5%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.FooterProps {
+  background-color:#ccc;
+  width: 100%;
+  height: 80px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FormProps {
+  font-size: 56px;
+  color: red;
+}
