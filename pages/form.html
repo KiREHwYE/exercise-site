@@ -5,17 +5,17 @@
   <title>Form</title>
 </head>
 
-<body>
+<body style="display: flex; justify-content: center; align-items: center">
   <h1>
     Form
   </h1>
 
   <form style="display: flex;flex-direction: column;width: 20%">
 
-    <input type="text" name="name" placeholder="Full name">
-    <input type="tel" name="phone_number" placeholder="Phone number">
-    <input type="email" name="email" placeholder="Email">
-    <input type="date" name="date" placeholder="Date of birth">
+    <input required type="text" name="name" placeholder="Full name">
+    <input required type="tel" name="phone_number" placeholder="Phone number">
+    <input required type="email" name="email" placeholder="Email">
+    <input required type="date" name="date" placeholder="Date of birth">
 
     <div style="flex-direction: row;margin-top: 20px">
       <input type="radio" name="sex"value="Male">Male
@@ -36,7 +36,7 @@
       <option value="value11">Scala</option>
     </select>
 
-    <textarea style="margin-top: 20px" name="biography" placeholder="Your biography"></textarea>
+    <textarea required style="margin-top: 20px" name="biography" placeholder="Your biography"></textarea>
 
     <p><input type="checkbox" name="contract_agreement" value="yes">I agree with the contract.</p>
 
