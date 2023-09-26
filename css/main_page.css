@@ -37,14 +37,6 @@ table caption {
   background-color: white;
 }
 
-/*table tbody:nth-child(odd) {*/
-/*  background-color: white;*/
-/*}*/
-
-/*table tbody:nth-child(even) {*/
-/*  background-color: #b3d4fc;*/
-/*}*/
-
 table tbody tr:nth-child(odd) {
   background-color: white;
 }
@@ -76,17 +68,22 @@ header div img {
   border-radius: 50%;
 }
 
-header div a{
-  margin-right: 50px;
+
+header nav {
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
   font-size: 22px;
 }
 
-header div {
+header div, header nav {
   justify-content: space-between;
   margin: 10px
 }
 
-nav h2 {
+div h2 {
   font-size: 56px;
 }
 
@@ -96,18 +93,30 @@ nav h2 {
   align-items: center
 }
 
-.HeaderProps {
+@media (min-width: 960px) {
+  header {
+    background-color:#ccc;
+    width: 100%;
+    height: 140px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+header {
   background-color:#ccc;
   width: 100%;
-  height: 140px;
-  padding-left: 20px;
+  height: 190px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.NavProps {
+.MainDivProps {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
