@@ -96,6 +96,15 @@ li {
   margin-bottom: 15px;
 }
 
+
+header div {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1081px){
+  margin-left: 0;
+}
+
 header div img {
   margin-right: 10px;
 }
@@ -120,6 +129,7 @@ div h2 {
 }
 .mobile-only-header {
   display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 1081px) {
