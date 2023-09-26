@@ -26,7 +26,7 @@ main a {
   order: 4;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1081px){
 
   main h2 {
     order: 1;
@@ -116,7 +116,7 @@ div h2 {
   display: flex;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
   .mobile-only-header {
     display: none;
   }
@@ -125,7 +125,7 @@ div h2 {
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1081px){
   header nav {
     display: flex;
     flex-direction: row;
@@ -147,7 +147,7 @@ div h2 {
   margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .mobile-only-nav {
     display: none;
   }
