@@ -43,37 +43,37 @@ main table {
 /*}*/
 
 
-caption {
-  border: 3px solid purple;
-  font-size: 30px;
-  font-weight: bold;
-}
+/*caption {*/
+/*  border: 3px solid purple;*/
+/*  font-size: 30px;*/
+/*  font-weight: bold;*/
+/*}*/
 
-th {
-  border: 1px solid grey;
-  font-weight: bold;
-}
+/*th {*/
+/*  border: 1px solid grey;*/
+/*  font-weight: bold;*/
+/*}*/
 
-td {
-  border: 1px solid grey;
-  text-align: center;
-}
+/*td {*/
+/*  border: 1px solid grey;*/
+/*  text-align: center;*/
+/*}*/
 
-table thead {
-  background-color: #3cff37;
-}
+/*table thead {*/
+/*  background-color: #3cff37;*/
+/*}*/
 
-table caption {
-  background-color: white;
-}
+/*table caption {*/
+/*  background-color: white;*/
+/*}*/
 
-table tbody tr:nth-child(odd) {
-  background-color: white;
-}
+/*table tbody tr:nth-child(odd) {*/
+/*  background-color: white;*/
+/*}*/
 
-table tbody tr:nth-child(even) {
-  background-color: #b3d4fc;
-}
+/*table tbody tr:nth-child(even) {*/
+/*  background-color: #b3d4fc;*/
+/*}*/
 
 /*main {*/
 /*  display: flex;*/
