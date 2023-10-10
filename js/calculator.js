@@ -24,26 +24,15 @@ function calculate() {
     return;
   }
 
-  if (goods_type.value === "tomato")
-    price_of_goods = 55;
+  let goods = new Map([
+    ["tomato", 55],
+    ["cucumber", 46],
+    ["zucchini", 87],
+    ["onion", 29],
+    ["garlic", 127]
+  ]);
 
-  else if (goods_type.value === "cucumber")
-    price_of_goods = 46;
-
-  else if (goods_type.value === "zucchini")
-    price_of_goods = 87;
-
-  else if (goods_type.value === "onion")
-    price_of_goods = 29;
-
-  else if (goods_type.value === "garlic")
-    price_of_goods = 127;
-
-  else
-    price_of_goods = 193;
-
-
-    result_field.innerHTML = (parseInt(quantity_of_goods.value) * parseInt(price_of_goods)).toString();
+    result_field.innerHTML = (parseInt(quantity_of_goods.value) * goods.get(goods_type.value)).toString();
 }
 
 window.addEventListener(
