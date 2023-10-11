@@ -1,5 +1,5 @@
-function containsOnlyNumbers(str) {
-  return /^-?\d+$/.test(str);
+function isItNumber(str) {
+  return /^-?\d+(.(\d)+)?$/.test(str);
 }
 function calculate() {
 
@@ -14,7 +14,7 @@ function calculate() {
     return;
   }
 
-  if (!containsOnlyNumbers(quantity_of_goods.value)){
+  if (!isItNumber(quantity_of_goods.value)){
     result_field.innerHTML = "Invalid input";
     return;
   }
@@ -29,10 +29,11 @@ function calculate() {
     ["cucumber", 46],
     ["zucchini", 87],
     ["onion", 29],
-    ["garlic", 127]
+    ["garlic", 127],
+    ["ginger", 279]
   ]);
 
-    result_field.innerHTML = (parseInt(quantity_of_goods.value) * goods.get(goods_type.value)).toString();
+    result_field.innerHTML = (parseFloat(quantity_of_goods.value) * goods.get(goods_type.value)).toString();
 }
 
 window.addEventListener(
