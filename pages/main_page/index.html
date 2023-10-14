@@ -6,47 +6,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/main_page.css">
-  <script src="../../js/calculator.js" defer></script>
 </head>
 
 <body>
-
-<!--  <header class="desktop-only-header">-->
-
-<!--    <div class="DivRowCentered">-->
-<!--      <img src="../../logo.png" width="100" height="100" alt="logo">-->
-<!--      <h1 style="font-family: 'Bookman Old Style'">-->
-<!--          Kuban State University-->
-<!--      </h1>-->
-<!--    </div>-->
-<!--    <nav>-->
-<!--      <a href="../inner_page/inner_page.html">Page1</a>-->
-<!--      <a href="../../about/some_page.html">Page2</a>-->
-<!--      <a href="../../one_another_page.html">Page3</a>-->
-<!--      <a href="../page_one_level_higher.html">Page4</a>-->
-<!--      <a href="../form.html">Form</a>-->
-<!--    </nav>-->
-
-<!--  </header>-->
-
-<!--  <header class="mobile-only-header">-->
-
-<!--    <div class="DivRowCentered">-->
-<!--      <img src="../../logo.png" width="100" height="100" alt="logo">-->
-<!--      <h1 style="font-family: 'Bookman Old Style'">-->
-<!--        Kuban State University-->
-<!--      </h1>-->
-<!--    </div>-->
-
-<!--  </header>-->
-
-<!--  <nav class="mobile-only-nav">-->
-<!--    <a href="../inner_page/inner_page.html">Page1</a>-->
-<!--    <a href="../../about/some_page.html">Page2</a>-->
-<!--    <a href="../../one_another_page.html">Page3</a>-->
-<!--    <a href="../page_one_level_higher.html">Page4</a>-->
-<!--    <a href="../form.html">Form</a>-->
-<!--  </nav>-->
 
   <header>
     <div class="container-fluid bg-dark-subtle">
@@ -276,14 +238,17 @@
 
           </table>
 
-          <div class="col-8 col-md-5 container mt-4 mb-4">
+          <div class="col-8 col-md-6 container mt-4 mb-4">
             <div>
               <p class="h1">
                 Calculator
               </p>
             </div>
+
             <form class="row row-cols-1 d-flex justify-content-center align-items-center">
+
               <input class="col" required type="string" id="quantity_of_goods" placeholder="Quantity of goods">
+
               <select class="col" id="goods_type">
                 <option value="tomato">Tomato</option>
                 <option value="cucumber">Cucumber</option>
@@ -292,6 +257,22 @@
                 <option value="garlic">Garlic</option>
                 <option value="ginger">Ginger</option>
               </select>
+
+              <div class="col m-2" id="radios">
+                  <input class="me-2" required type="radio" id="radio_button_checked_by_default" name="service_type" value="Flowers"><b>Flowers</b>
+                  <input class="ms-3 me-2" required type="radio" name="service_type" value="Aubergine"><b>+Aubergine</b>
+                  <input class="ms-3 me-2" required type="radio" name="service_type" value="Loans"><b>Loans</b>
+              </div>
+
+              <select class="col" style="display: none" id="aubergine_options">
+                <option name="freshness" value="fresh">Fresh</option>
+                <option name="freshness" value="not_fresh">Not Fresh</option>
+              </select>
+
+              <div class="col row" style="display: none" id="loan_options">
+                <p class="col"><input class="me-2" required type="checkbox" name="loan_options_type" value="long_support">30 years, please</p>
+                <p class="col"><input class="me-2" required type="checkbox" name="loan_options_type" value="grandson_too">For my grandson too</p>
+              </div>
 
               <div class="col">
                 <p class="h4" id="result"></p>
@@ -318,6 +299,9 @@
     © Gontarev Michael
   </p>
 </footer>
+
+
+  <script src="../../js/calculator.js" defer></script>
 
 </body>
 </html>
